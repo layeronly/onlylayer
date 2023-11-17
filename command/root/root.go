@@ -27,7 +27,7 @@ type RootCommand struct {
 func NewRootCommand() *RootCommand {
 	rootCommand := &RootCommand{
 		baseCmd: &cobra.Command{
-			Short: "ONLY Network is a framework for building Ethereum-compatible Blockchain networks",
+			Short: "ONLY is an Ethereum-compatible Blockchain network",
 		},
 	}
 
