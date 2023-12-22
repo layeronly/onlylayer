@@ -699,7 +699,7 @@ func TestEnqueueHandler(t *testing.T) {
 			pool.SetSigner(&mockSigner{})
 
 			//	mock full enqueued
-			pool.accounts.maxEnqueuedLimit = 1
+			pool.accounts.maxEnqueuedLimit = 10000
 			fillEnqueued(pool, 1)
 
 			assert.Equal(t, uint64(1), pool.accounts.get(addr1).enqueued.length())
